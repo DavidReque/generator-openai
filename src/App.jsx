@@ -60,7 +60,7 @@ function App() {
             </div>
           </>
         ) : (
-          <img style={{width: 512, height: 512}} src={image} alt="" />
+          <img style={{ width: 512, height: 512 }} src={image} alt="" />
         )}
       </div>
     </div>
