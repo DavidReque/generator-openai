@@ -8,7 +8,7 @@ const configuration = new Configuration({
 const openai = new OpenAIApi(configuration);
 
 function App() {
-  const [image, setImage] = useState();
+  const [image, setImage] = useState([]);
   const [isLoading, setIsLoading] = useState(false);
   const [prompt, setPrompt] = useState("");
 
@@ -42,7 +42,7 @@ function App() {
       <div>
         {isLoading ? (
           <>
-            <div class="lds-spinner">
+            <div className="lds-spinner">
               <div></div>
               <div></div>
               <div></div>
